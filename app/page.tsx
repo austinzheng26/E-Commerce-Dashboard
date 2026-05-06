@@ -1,12 +1,14 @@
 import TopProducts from "../components/top_products";
 
 const products = [
-  {name: "Socks", revenue: 230, orders: 23},
-  {name: "Shirt", revenue: 300, orders: 30},
+  {name: "Socks", revenue: 230, orders: 25},
+  {name: "Shirt", revenue: 300, orders: 27},
   {name: "Hat", revenue: 180, orders: 12},
-  {name: "Pants", revenue: 290, orders: 28}
+  {name: "Pants", revenue: 290, orders: 23}
 ];
 
+const byRevenue = [...products];
+byRevenue.sort((a,b) => b.revenue - a.revenue);
 
 export default function Home() {
   return (
@@ -21,7 +23,7 @@ export default function Home() {
             Top 5 Products by Revenue
           </h1>
 
-          <TopProducts className="w-full bg-zinc-300 dark:bg-gray-600 p-3" products={products}/>
+          <TopProducts className="w-full bg-zinc-300 dark:bg-gray-600 p-3" products={byRevenue}/>
         </div>
         
       </main>
