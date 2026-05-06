@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-text: #171717;
+  --color-chart-line: blue;
 }
 
 @theme inline {
@@ -15,7 +17,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ffffff;
+    --color-text: #ffffff;
+    --color-chart-line: orange;
   }
 }
 
