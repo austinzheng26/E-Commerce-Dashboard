@@ -6,10 +6,10 @@ export default function TopProducts({products, className}) {
     return (
         <div className={className}>
             <div className="grid grid-cols-4 text-black dark:text-white">
-                <div className="flex justify-center border-r">Rank</div>
-                <div className="flex justify-center border-r">Name</div>
-                <div className="flex justify-center border-r">Revenue</div>
-                <div className="flex justify-center">Orders</div>
+                <div className="flex justify-center border-r font-semibold">Rank</div>
+                <div className="flex justify-center border-r font-semibold">Name</div>
+                <div className="flex justify-center border-r font-semibold">Revenue</div>
+                <div className="flex justify-center font-semibold">Orders</div>
             </div>
 
             <hr/>

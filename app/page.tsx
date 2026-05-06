@@ -1,4 +1,5 @@
 import TopProducts from "../components/top_products";
+import Summary from "../components/summary";
 
 const products = [
   {name: "Socks", revenue: 230, orders: 25},
@@ -23,6 +24,15 @@ export default function Home() {
       </h1>
 
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+        <div className="flex flex-col items-center w-full bg-zinc-400 dark:bg-gray-700 p-5 rounded-3xl mb-10">
+          <h1 className="max-w-xs text-2xl font-semibold text-black dark:text-white mb-5">
+            Summary
+          </h1>
+
+          <Summary className="w-full bg-zinc-300 dark:bg-gray-600 p-3 rounded-3xl" products={products}/>
+        </div>
+        
+        
         <div className="flex flex-col items-center w-full bg-zinc-400 dark:bg-gray-700 p-5 rounded-3xl">
           <h1 className="max-w-xs text-2xl font-semibold text-black dark:text-white mb-5">
             Top 5 Products by Revenue
