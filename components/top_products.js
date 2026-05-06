@@ -1,4 +1,8 @@
 export default function TopProducts({products, className}) {
+    if (products.length > 5) {
+        products = products.slice(0,5);
+    }
+    
     return (
         <div className={className}>
             <div className="grid grid-cols-4 text-black dark:text-white">
