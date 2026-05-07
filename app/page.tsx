@@ -32,7 +32,7 @@ export default function Home() {
         Analytics Dashboard
       </h1>
 
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-15 px-16 bg-white dark:bg-black sm:items-start">
+      <main className="flex flex-1 w-full max-w-3xl flex-col items-center py-15 px-16 bg-white dark:bg-black sm:items-start">
         <div className="flex flex-col items-center w-full bg-zinc-400 dark:bg-gray-700 p-5 rounded-3xl mb-10">
           <h1 className="max-w-xs text-2xl font-semibold text-black dark:text-white mb-5">
             Summary

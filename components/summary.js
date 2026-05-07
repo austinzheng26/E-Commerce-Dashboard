@@ -10,8 +10,8 @@ export default function Summary({products, className}) {
     return (
         <div className={className}>
             <div className="grid grid-cols-2 text-black dark:text-white">
-                <div className="flex justify-center border-r font-semibold">Total Revenue</div>
-                <div className="flex justify-center font-semibold">Total Orders</div>
+                <div className="flex justify-center border-r font-semibold text-xs sm:text-base">Total Revenue</div>
+                <div className="flex justify-center font-semibold text-xs sm:text-base">Total Orders</div>
             </div>
 
             <hr/>

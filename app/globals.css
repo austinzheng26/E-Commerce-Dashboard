@@ -5,6 +5,7 @@
   --foreground: #171717;
   --color-text: #171717;
   --color-chart-line: blue;
+  --color-tooltip: rgb(161, 161, 170);
 }
 
 @theme inline {
@@ -20,6 +21,7 @@
     --foreground: #ffffff;
     --color-text: #ffffff;
     --color-chart-line: orange;
+    --color-tooltip: rgb(55 65 81);
   }
 }
 
